@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding:0;
+} 
+
+#imagem{
+    margin: auto;
+    width: 15%;
+    text-align: center;
+}
+
+#imagem img{
+    margin: auto;
+    text-align: center;
+    padding: none;
+    width: 100%;
+    border: 3px solid rgb(243, 255, 79);
+}
+
+form{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+input, select, button {
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], input[type="tel"] {
+   
+    width: 1000px;
+    height: 20px;
+    padding: 0.2em;
+    border: 1px solid rgb(126, 126, 126);
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    display: block;
+
+}
+
+#data{
+    width: 490px;
+    height: 20px;
+    padding: 0.2em;
+    border: 1px solid rgb(126, 126, 126);
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    display: block;
+}
+
+select{
+    width: 240px;
+    height: 28px;
+    padding: 0.2em;
+    border: 1px solid rgb(126, 126, 126);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+#sel{
+    display: flex;
+}
+
+#sel div{
+    margin-right: 15px;
+}
+
+.campo input:focus, .campo select:focus{
+    background: rgb(139, 138, 138);
+}
+
+.botao{
+    width: 100px;
+    font-size: 1.2em;
+    color: white;
+    background-color: blueviolet;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50% -50%);
+}
+
+.botao:hover {
+    background: rgb(204, 204, 204);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
