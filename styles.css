@@ -6,6 +6,7 @@ body{
 } 
 
 #imagem{
+    display: flexbox;
     margin: auto;
     width: 30%;
     text-align: center;
