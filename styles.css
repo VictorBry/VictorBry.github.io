@@ -12,7 +12,9 @@ body{
 }
 
 #imagem img{
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: none;
     width: 100%;
