@@ -170,5 +170,3 @@ function outracorb(){
       outro.setAttribute("hidden", "true");
    }
 }
-
- 
