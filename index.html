@@ -13,8 +13,9 @@
     <div id="imagem">
         <img src="logo.jpeg" alt="Logo da empresa Origginal Car">
     </div>
+
     
-    <form method="post" id="frm">
+    <form method="post" id="frm" onsubmit="return btnClick()" autocomplete="on">
 
         <div>
             <h1 id="titulo">Dados do cliente</h1>
@@ -41,7 +42,7 @@
 
             <div class="campo">
                 <Label for="tel">Celular</Label>
-                <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+                <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" required>
             </div>
 
            
@@ -52,22 +53,336 @@
             </div>
 
             <div class="campo">
-                <Label for="mvel">Modelo do veículo</Label>
-                <select id="mvel" name="mvel">
-                    <option>...</option>
-                </select>
+                <Label for="mvel">Modelo do Veículo</Label>
+                <input type="text" name="mvel" id="mvel" placeholder="Modelo" required>
             </div>
 
             <div class="campo">
                 <Label for="servicos">Serviços</Label>
-                <select id="servicos" name="servicos">
-                    <option>...</option>
+                <select id="servicos" name="servicos" onchange="return mcor()" required>
+                    <option selected disabled>...Selecione uma Opção...</option>
+                    <option>Pintura</option>
+                    <option>Funilaria</option>
+                    <option>Pintura e Funilaria</option>
                 </select>
             </div>
         </div>
+        <div id="cores">
+            <div hidden="true" id="dcor">
+                <label for="cor">Cor</label>
+                <select name="cor" id="cor" onchange="return mcores()">
+                    <option selected disabled>...Selecione uma Opção...</option>
+                    <option>Prata</option>
+                    <option>Vermelho</option>
+                    <option>Cinza</option>
+                    <option>Preto</option>
+                    <option>Branco</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+            <div hidden id="tprata">
+                <label for="stprata">Tom de Prata</label>
+                <select name="tprata" id="stprata" onchange="return outracorpr()">
+                        <option selected disabled>...Selecione uma Opção...</option>
+                    <div>
+                        <option>Prata Switchblade</option>
+                    </div>
+                    <div> 
+                        <option>Prata Bari</option>
+                        <option>Prata Melfi</option>
+                    </div>
+                    <div>
+                        <option>Prata Dublin</option>
+                        <option>Prata Riviera</option>
+                        <option>Prata Geada</option>
+                        <option>Prata Viena</option>
+                    </div>
+                    <div>
+                        <option>Prata Platinum</option>
+                        <option>Prata Global</option>
+                    </div>
+                    <div>
+                        <option>Areia Prata</option>
+                        <option>Prata Metal</option>
+                        <option>Prata Moonlight</option>
+                    </div>
+                    <div>
+                        <option>Prata Brilhante</option>
+                    </div>
+                    <div>
+                        <option>Prata Cool</option>
+                        <option>Prata Rodhium</option>
+                    </div>
+                    <div>
+                        <option>Prata Classic</option>
+                    </div>
+                    <div>
+                        <option>Prata Etoile</option>
+                    </div>
+                    <div>
+                        <option>Prata Supernova</option>
+                        <option>Prata Soul</option>
+                        <option>Prata Nevoa</option>
+                        <option>Prata Premium</option>
+                    </div>
+                    <div">
+                        <option">Prata Sirius</option>
+                        <option">Prata Sargas</option>
+                        <option">Silver Tungsten</option>
+                        <option">Prata Snow</option>
+                    </div>
+                        <option>Outro</option>
+                </select>
+            </div>
+            <div hidden id="tred">
+                <label for="stred">Tom de Vermelho</label>
+                <select name="tred" id="stred" onchange="outracorr()">
+                        <option selected disabled>...Selecione uma Opção...</option>
+                    <div>
+                        <option>Vermelho Carmim</option>
+                        <option>Vermelho Chili</option>
+                        <option>Vermelho Glory</option>
+                        <option>Vermelho Baroque</option>
+                        <option>Vermelho Pull Me Over</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Alpine</option>
+                        <option>Vermelho Modena</option>
+                        <option>Vermelho Tribal</option>
+                        <option>Vermelho Colorado</option>
+                        <option>Vermelho Oppulence</option>
+                        <option>Vermelho Marsala</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Arpoador</option>
+                        <option>Vermelho Merlot</option>
+                        <option>Vermelho Vermont</option>
+                        <option>Vermelho Arizona</option>
+                        <option>Vermelho Bari</option>
+                        <option>Vermelho Toscana</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Mercurio</option>
+                        <option>Vermelho Rallye</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Rubi</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Malbec</option>
+                        <option>Vermelho Alert</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Aden</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Fogo</option>
+                        <option>Vermelho Vivo</option>
+                    </div>
+                    <div>
+                        <option>Vermelho Barcelona</option>
+                        <option>Vermelho Volcano</option>
+                        <option>Vermelho Fúria</option>       
+                    </div>
+                    <div">
+                        <option">Vermelho Flash</option>
+                        <option">Vermelho Tornado</option>
+                    </div>
+                    <option>Outro</option>
+                </select>
+            </div>
+            <div hidden id="tcinza">
+                <label for="stcinza">Tom de Cinza</label>
+                <select name="tcinza" id="stcinza" onchange="outracorc()">
+                        <option selected disabled>...Selecione uma Opção...</option>
+                    <div>
+                        <option>Cinza Graphite</option>
+                        <option>Cinza Satin Steel</option>
+                    </div>
+                    <div>
+                        <option>Cinza Moondust</option>
+                        <option>Cinza Shark</option>
+                    </div>
+                    <div>
+                        <option>Cinza Scandium</option>
+                        <option>Cinza Antique</option>
+                        <option>Cinza Tellurium</option>
+                    </div>
+                    <div>
+                        <option>Cinza Moscou</option>
+                        <option>Cinza Ubatuba</option>
+                    </div>
+                    <div>
+                        <option>Cinza Barium</option>
+                    </div>
+                    <div>
+                        <option>Cinza Titanio</option>
+                        <option>Cinza Urbano</option>
+                    </div>
+                    <div>
+                        <option>Cinza Londrino</option>
+                    </div>
+                    <div>
+                        <option>Cinza Magnum</option>
+                        <option>Cinza Grafite</option>
+                        <option>Cinza Titanium</option>
+                    </div>
+                    <div>
+                        <option>Cinza Grafito</option>
+                    </div>
+                    <div>
+                        <option>Cinza Acier</option>
+                        <option>Cinza Quartz</option>
+                    </div>
+                    <div>
+                        <option>Cinza Galatico</option>
+                        <option>Cinza Cosmopolitan</option>
+                    </div>
+                    <div">
+                        <option">Cinza Platinum</option>
+                        <option">Cinza Carbono</option>
+                    </div>
+                        <option>Outro</option>
+                </select>
+            </div>
+            <div hidden id="tpreto">
+                <label for="stpreto">Tom de Preto</label>
+                <select name="tpreto" id="stpreto" onchange="return outracorpt()">
+                        <option selected disabled>...Selecione uma Opção...</option>
+                    <div>
+                        <option>Preto Ouro Negro</option>
+                        <option>Preto Global</option>
+                    </div>
+                    <div>
+                        <option>Preto Vulcano</option>
+                        <option>Preto Vesuvio</option>
+                        <option>Preto Carbon</option>
+                    </div>
+                    <div>
+                        <option>Preto Bristol</option>
+                        <option>Preto Ebony</option>
+                        <option>Preto Asturias</option>
+                        <option>Preto Gales</option>
+                    </div>
+                    <div>
+                        <option>Preto Cristal</option>
+                    </div>
+                    <div>
+                        <option>Preto Aurora</option>
+                    </div>
+                    <div>
+                        <option>Preto Onix</option>
+                    </div>
+                    <div>
+                        <option>Preto Premium</option>
+                    </div>
+                    <div>
+                        <option>Preto Perla Nera</option>
+                    </div>
+                    <div>
+                        <option>Preto Nacre</option>
+                        <option>Preto Opaco</option>
+                        <option>Preto Ametista</option>
+                    </div>
+                    <div>
+                        <option>Preto Eclipse</option>
+                        <option>Preto Atitude</option>
+                        <option>Preto Rock</option>
+                    </div>
+                    <div">
+                        <option">Preto Ninja</option>
+                        <option">Preto Mystic</option>
+                    </div>
+                        <option>Outro</option>
+                </select>
+            </div>
+            <div hidden id="tbranco">
+                <label for="stbranco">Tom de Branco</label>
+                <select name="tbranco" id="stbranco" onchange="outracorb()">
+                        <option selected disabled>...Selecione uma Opção...</option>
+                    <div>
+                        <option>Branco Summit</option>
+                        <option>Branco Abalone</option>
+                        <option>Branco Vintage</option>
+                    </div>
+                    <div>
+                        <option>Branco Banchisa</option>
+                        <option>Branco Alaska</option>
+                        <option>Branco Kalahari</option>
+                    </div>
+                    <div>
+                        <option>Branco Artico</option>
+                        <option>Branco Siberia</option>
+                    </div>
+                    <div>
+                        <option>Branco Estelar</option>
+                        <option>Branco Taffeta</option>
+                        <option>Branco Orchid</option>
+                    </div>
+                    <div>
+                        <option>Branco Polar</option>
+                    </div>
+                    <div>
+                        <option>Branco Claro</option>
+                    </div>
+                    <div>
+                        <option>Branco Fuji</option>
+                        <option>Branco Alpino</option>
+                    </div>
+                    <div>
+                        <option>Branco Diamond</option>
+                        <option>Branco Aspen</option>
+                        <option>Branco Glacial</option>
+                    </div>
+                    <div>
+                        <option>Branco Nacre</option>
+                        <option>Branco Banquise</option>
+                    </div>
+                    <div>
+                        <option>Branco Glacier</option>
+                        <option>Branco Neige</option>
+                    </div>
+                    <div>
+                        <option>Branco Bossa Nova</option>
+                        <option>Branco Blizzard</option>
+                    </div>
+                    <div">
+                        <option">Branco Cristal</option>
+                        <option">Branco Puro</option>
+                    </div>
+                        <option>Outro</option>
+                </select>
+            </div>
+            <div hidden id="doutro">
+                <label for="outro">Digite a Cor</label>
+                <input type="text" id="outro" placeholder="Cor" name="outro">
+            </div>
+        </div>    
+            <table id="tabela" border="1"> 
+                    <thead><tr><td>Quant.</td><td>Descrição</td><td>Valor</td><td>Total</td></tr></thead>
+                    <tr><td><input type="text" class="quant" name="q1"></td><td><input type="text" class="discr" name="d1"></td><td><input type="text" class="valor" name="v1"></td><td><input type="text" class="total" readonly name="s1"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q2"></td><td><input type="text" class="discr" name="d2"></td><td><input type="text" class="valor" name="v2"></td><td><input type="text" class="total" readonly name="s2"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q3"></td><td><input type="text" class="discr" name="d3"></td><td><input type="text" class="valor" name="v3"></td><td><input type="text" class="total" readonly name="s3"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q4"></td><td><input type="text" class="discr" name="d4"></td><td><input type="text" class="valor" name="v4"></td><td><input type="text" class="total" readonly name="s4"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q5"></td><td><input type="text" class="discr" name="d5"></td><td><input type="text" class="valor" name="v5"></td><td><input type="text" class="total" readonly name="s5"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q6"></td><td><input type="text" class="discr" name="d6"></td><td><input type="text" class="valor" name="v6"></td><td><input type="text" class="total" readonly name="s6"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q7"></td><td><input type="text" class="discr" name="d7"></td><td><input type="text" class="valor" name="v7"></td><td><input type="text" class="total" readonly name="s7"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q8"></td><td><input type="text" class="discr" name="d8"></td><td><input type="text" class="valor" name="v8"></td><td><input type="text" class="total" readonly name="s8"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q9"></td><td><input type="text" class="discr" name="d9"></td><td><input type="text" class="valor" name="v9"></td><td><input type="text" class="total" readonly name="s9"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q10"></td><td><input type="text" class="discr" name="d10"></td><td><input type="text" class="valor" name="v10"></td><td><input type="text" class="total" readonly name="s10"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q11"></td><td><input type="text" class="discr" name="d11"></td><td><input type="text" class="valor" name="v11"></td><td><input type="text" class="total" readonly name="s11"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q12"></td><td><input type="text" class="discr" name="d12"></td><td><input type="text" class="valor" name="v12"></td><td><input type="text" class="total" readonly name="s12"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q13"></td><td><input type="text" class="discr" name="d13"></td><td><input type="text" class="valor" name="v13"></td><td><input type="text" class="total" readonly name="s13"></td></tr>
+                    <tr><td><input type="text" class="quant" name="q14"></td><td><input type="text" class="discr" name="d14"></td><td><input type="text" class="valor" name="v14"></td><td><input type="text" class="total" readonly name="s14"></td></tr>
+            </table>
+            
+            <label>Total:<input type="text" name="totalt" id="tt" readonly></label>
 
+        <div id="btns">
+            <button id="calc" class="botao" type="button">Calcular</button>
+           
             <button id="btn" class="botao" type="submit">Gerar</button>
-
+        </div>
     </form>
 
 </body>
