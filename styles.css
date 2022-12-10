@@ -1,26 +1,33 @@
 body{
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    margin: 20px;
+    margin:5% auto;
     padding:0;
+    width: 90%;
+    min-height: fit-content;
+    max-height: fit-content;
+    min-width: fit-content;
+    max-width: fit-content;
+
 } 
 
 #imagem{
-    display: flexbox;
+
     margin: auto;
     width: 30%;
     text-align: center;
 }
 
 #imagem img{
-    box-sizing:inherit;
+    box-sizing: content-box;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20% auto;
+    margin-right: 20% auto;
     text-align: center;
     padding: none;
     width: 100%;
     border: 3px solid rgb(243, 255, 79);
+    max-width: 100%;
 }
 
 form{
@@ -96,6 +103,7 @@ select{
 #tabela{
     text-align: center;
     margin-top: 1em;
+    margin-right: auto;
 }
 
 .quant{
