@@ -107,6 +107,12 @@ function mcor(){
          cores.removeAttribute("hidden");
       } else {
          cores.setAttribute("hidden", "true")
+         slv.setAttribute("hidden", "true");
+         red.setAttribute("hidden", "true")
+         cnz.setAttribute("hidden", "true")
+         prt.setAttribute("hidden", "true")
+         brn.setAttribute("hidden", "true")
+         outro.setAttribute("hidden", "true")
       }
       
 }
