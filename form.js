@@ -9,7 +9,8 @@
  var cores = document.querySelector("#dcor");
  var outro = document.querySelector("#doutro")
  var srv = frm.servicos.value
- btn.addEventListener("click", function (event) {
+
+ function calc(){
     frm.s1.value = frm.q1.value * frm.v1.value
     frm.s2.value = frm.q2.value * frm.v2.value
     frm.s3.value = frm.q3.value * frm.v3.value
@@ -25,9 +26,14 @@
     frm.s13.value = frm.q13.value * frm.v13.value
     frm.s14.value = frm.q14.value * frm.v14.value
     frm.totalt.value = parseFloat(frm.s1.value)+parseFloat(frm.s2.value)+parseFloat(frm.s3.value)+parseFloat(frm.s4.value)+parseFloat(frm.s5.value)+parseFloat(frm.s6.value)+parseFloat(frm.s7.value)+parseFloat(frm.s8.value)+parseFloat(frm.s9.value)+parseFloat(frm.s10.value)+parseFloat(frm.s11.value)+parseFloat(frm.s12.value)+parseFloat(frm.s13.value)+parseFloat(frm.s14.value);
+ }
+
+ btn.addEventListener("click", function (event) {
+    calc()
  })
  
  function btnClick(){
+   calc()
     document.write("<p>Tel:3423-3858</p>");
     document.write("<p>Cel:9.8854-3656</p>");
     document.write("<p>Rua Pedro Flauzino Filho 280</p>");

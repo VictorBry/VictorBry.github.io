@@ -10,6 +10,15 @@ body{
     max-width: fit-content;
 } 
 
+.bgimg{
+    min-width: fit-content;
+    min-height: fit-content;
+    background-image: url('logo.jpeg');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #imagem{
 
     margin: auto;
