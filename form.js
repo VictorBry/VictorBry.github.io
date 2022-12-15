@@ -34,97 +34,97 @@
  
  function btnClick(){
    calc()
-    document.write("<p>Tel:3423-3858</p>");
-    document.write("<p>Cel:9.8854-3656</p>");
+    document.write("<p>Tel:3423-3858 | Cel:9.8854-3656</p>");
     document.write("<p>Rua Pedro Flauzino Filho 280</p>");
     document.write("<p>Bairro Nossa Senhora Aparecida</p>");
-    document.write("<p>Cep 37555-419</p>");
-    document.write("<p>",frm.tipo.value,"</p>");
-    document.write("<p>",frm.nome.value,"</p>");
-    document.write("<p>",frm.email.value,"</p>");
-    document.write("<p>",frm.tel.value,"</p>");
-    document.write("<p>",frm.data.value,"</p>");
-    document.write("<p>",frm.mvel.value,"</p>");
-    document.write("<p>",frm.servicos.value,"</p>");
+    document.write("<p>Cep: 37555-419</p>");
+    document.write("<p>-------------------------------</p>");
+    document.write("<p>","Tipo de Registro: ",frm.tipo.value,"</p>");
+    document.write("<p>","Nome do Cliente: ",frm.nome.value,"</p>");
+    document.write("<p>","Email do Cliente: ",frm.email.value,"</p>");
+    document.write("<p>","Tel do Cliente: ",frm.tel.value,"</p>");
+    document.write("<p>","Data do Serviço: ",frm.data.value,"</p>");
+    document.write("<p>","Modelo do Veículo: ",frm.mvel.value,"</p>");
+    document.write("<p>","Serviço: ",frm.servicos.value,"</p>");
     srv = frm.servicos.value
     if (srv.includes('Pintura')) {
       if(frm.cor.value == "Outro"){
-         document.write("<p>",frm.outro.value,"</p>");
+         document.write("<p>","Cor: ",frm.outro.value,"</p>");
       }else if(frm.cor.value == "Prata") {
          if(frm.tprata.value == "Outro") {
-            document.write("<p>",frm.outro.value,"</p>");
+            document.write("<p>","Cor: ",frm.outro.value,"</p>");
          }else {
-            document.write("<p>",frm.tprata.value,"</p>");
+            document.write("<p>","Cor: ",frm.tprata.value,"</p>");
          }
       }else if(frm.cor.value == "Vermelho") {
          if(frm.tred.value == "Outro") {
-            document.write("<p>",frm.outro.value,"</p>");
+            document.write("<p>","Cor: ",frm.outro.value,"</p>");
          }else {
-            document.write("<p>",frm.tred.value,"</p>");
+            document.write("<p>","Cor: ",frm.tred.value,"</p>");
          }
       }else if(frm.cor.value == "Cinza") {
          if(frm.tcinza.value == "Outro") {
-            document.write("<p>",frm.outro.value,"</p>");
+            document.write("<p>","Cor: ",frm.outro.value,"</p>");
          }else {
-            document.write("<p>",frm.tcinza.value,"</p>");
+            document.write("<p>","Cor: ",frm.tcinza.value,"</p>");
          }
       }else if(frm.cor.value == "Preto") {
          if(frm.tpreto.value == "Outro") {
-            document.write("<p>",frm.outro.value,"</p>");
+            document.write("<p>","Cor: ",frm.outro.value,"</p>");
          }else {
-            document.write("<p>",frm.tpreto.value,"</p>");
+            document.write("<p>","Cor: ",frm.tpreto.value,"</p>");
          }
       }else if(frm.cor.value == "Branco") {
          if(frm.tbranco.value == "Outro") {
-            document.write("<p>",frm.outro.value,"</p>");
+            document.write("<p>","Cor: ",frm.outro.value,"</p>");
          }else {
-            document.write("<p>",frm.tbranco.value,"</p>");
+            document.write("<p>","Cor: ",frm.tbranco.value,"</p>");
          }
       }
     }
     if(frm.s1.value > 0){
-    document.write("<p>",frm.q1.value," ",frm.d1.value," ",frm.s1.value);
+    document.write("<p>","Quantidade: ",frm.q1.value,"| Descrição: ",frm.d1.value,"| Total: R$",frm.s1.value);
     }
     if(frm.s2.value > 0){
-    document.write("<p>",frm.q2.value," ",frm.d2.value," ",frm.s2.value);
+    document.write("<p>","Quantidade: ",frm.q2.value,"| Descrição: ",frm.d2.value,"| Total: R$",frm.s2.value);
     }
     if(frm.s3.value > 0){
-    document.write("<p>",frm.q3.value," ",frm.d3.value," ",frm.s3.value);
+    document.write("<p>","Quantidade: ",frm.q3.value,"| Descrição: ",frm.d3.value,"| Total: R$",frm.s3.value);
     }
     if(frm.s4.value > 0){
-    document.write("<p>",frm.q4.value," ",frm.d4.value," ",frm.s4.value);
+    document.write("<p>","Quantidade: ",frm.q4.value,"| Descrição: ",frm.d4.value,"| Total: R$",frm.s4.value);
     }
     if(frm.s5.value > 0){
-    document.write("<p>",frm.q5.value," ",frm.d5.value," ",frm.s5.value);
+    document.write("<p>","Quantidade: ",frm.q5.value,"| Descrição: ",frm.d5.value,"| Total: R$",frm.s5.value);
     }
     if(frm.s6.value > 0){
-    document.write("<p>",frm.q6.value," ",frm.d6.value," ",frm.s6.value);
+    document.write("<p>","Quantidade: ",frm.q6.value,"| Descrição: ",frm.d6.value,"| Total: R$",frm.s6.value);
     }
     if(frm.s7.value > 0){
-    document.write("<p>",frm.q7.value," ",frm.d7.value," ",frm.s7.value);
+    document.write("<p>","Quantidade: ",frm.q7.value,"| Descrição: ",frm.d7.value,"| Total: R$",frm.s7.value);
     }
     if(frm.s8.value > 0){
-    document.write("<p>",frm.q8.value," ",frm.d8.value," ",frm.s8.value);
+    document.write("<p>","Quantidade: ",frm.q8.value,"| Descrição: ",frm.d8.value,"| Total: R$",frm.s8.value);
     }
     if(frm.s9.value > 0){
-    document.write("<p>",frm.q9.value," ",frm.d9.value," ",frm.s9.value);
+    document.write("<p>","Quantidade: ",frm.q9.value,"| Descrição: ",frm.d9.value,"| Total: R$",frm.s9.value);
     }
     if(frm.s10.value > 0){
-    document.write("<p>",frm.q10.value," ",frm.d10.value," ",frm.s10.value);
+    document.write("<p>","Quantidade: ",frm.q10.value,"| Descrição: ",frm.d10.value,"| Total: R$",frm.s10.value);
     }
     if(frm.s11.value > 0){
-    document.write("<p>",frm.q11.value," ",frm.d11.value," ",frm.s11.value);
+    document.write("<p>","Quantidade: ",frm.q11.value,"| Descrição: ",frm.d11.value,"| Total: R$",frm.s11.value);
     }
     if(frm.s12.value > 0){
-    document.write("<p>",frm.q12.value," ",frm.d12.value," ",frm.s12.value);
+    document.write("<p>","Quantidade: ",frm.q12.value,"| Descrição: ",frm.d12.value,"| Total: R$",frm.s12.value);
     }
     if(frm.s13.value > 0){
-    document.write("<p>",frm.q13.value," ",frm.d13.value," ",frm.s13.value);
+    document.write("<p>","Quantidade: ",frm.q13.value,"| Descrição: ",frm.d13.value,"| Total: R$",frm.s13.value);
     }
     if(frm.s14.value > 0){
-    document.write("<p>",frm.q14.value," ",frm.d14.value," ",frm.s14.value);
+    document.write("<p>","Quantidade: ",frm.q14.value,"| Descrição: ",frm.d14.value,"| Total: R$",frm.s14.value);
     }
-    document.write("<p>Total :",frm.totalt.value,"</p>");
+    document.write("<p>Valor Total: R$",frm.totalt.value,"</p>");
     print();
 }
 
