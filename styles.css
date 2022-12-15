@@ -119,11 +119,11 @@ select{
     border: 0;
 }
 .valor, .total{
-    width: 25px;
+    width: 50px;
     border: 0;
 }
-.discr{
-    width: 850px;
+.descr{
+    width: 800px;
     border: 0;
 }
 

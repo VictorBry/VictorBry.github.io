@@ -82,22 +82,49 @@
          }
       }
     }
-    document.write("<table id='tabela' border='1'><thead><tr><td>Quant.</td><td>Descrição</td><td>Valor</td></tr></thead>")
-    document.write("<tr><td>",frm.q1.value,"</td><td>",frm.d1.value,"</td><td>",frm.s1.value,"</td></tr>")
-    document.write("<tr><td>",frm.q2.value,"</td><td>",frm.d2.value,"</td><td>",frm.s2.value,"</td></tr>")
-    document.write("<tr><td>",frm.q3.value,"</td><td>",frm.d3.value,"</td><td>",frm.s3.value,"</td></tr>")
-    document.write("<tr><td>",frm.q4.value,"</td><td>",frm.d4.value,"</td><td>",frm.s4.value,"</td></tr>")
-    document.write("<tr><td>",frm.q5.value,"</td><td>",frm.d5.value,"</td><td>",frm.s5.value,"</td></tr>")
-    document.write("<tr><td>",frm.q6.value,"</td><td>",frm.d6.value,"</td><td>",frm.s6.value,"</td></tr>")
-    document.write("<tr><td>",frm.q7.value,"</td><td>",frm.d7.value,"</td><td>",frm.s7.value,"</td></tr>")
-    document.write("<tr><td>",frm.q8.value,"</td><td>",frm.d8.value,"</td><td>",frm.s8.value,"</td></tr>")
-    document.write("<tr><td>",frm.q9.value,"</td><td>",frm.d9.value,"</td><td>",frm.s9.value,"</td></tr>")
-    document.write("<tr><td>",frm.q10.value,"</td><td>",frm.d10.value,"</td><td>",frm.s10.value,"</td></tr>")
-    document.write("<tr><td>",frm.q11.value,"</td><td>",frm.d11.value,"</td><td>",frm.s11.value,"</td></tr>")
-    document.write("<tr><td>",frm.q12.value,"</td><td>",frm.d12.value,"</td><td>",frm.s12.value,"</td></tr>")
-    document.write("<tr><td>",frm.q13.value,"</td><td>",frm.d13.value,"</td><td>",frm.s13.value,"</td></tr>")
-    document.write("<tr><td>",frm.q14.value,"</td><td>",frm.d14.value,"</td><td>",frm.s14.value,"</td></tr>")
-    document.write("<p>Total :",frm.totalt.value,"</p>")
+    if(frm.s1.value > 0){
+    document.write("<p>",frm.q1.value," ",frm.d1.value," ",frm.s1.value);
+    }
+    if(frm.s2.value > 0){
+    document.write("<p>",frm.q2.value," ",frm.d2.value," ",frm.s2.value);
+    }
+    if(frm.s3.value > 0){
+    document.write("<p>",frm.q3.value," ",frm.d3.value," ",frm.s3.value);
+    }
+    if(frm.s4.value > 0){
+    document.write("<p>",frm.q4.value," ",frm.d4.value," ",frm.s4.value);
+    }
+    if(frm.s5.value > 0){
+    document.write("<p>",frm.q5.value," ",frm.d5.value," ",frm.s5.value);
+    }
+    if(frm.s6.value > 0){
+    document.write("<p>",frm.q6.value," ",frm.d6.value," ",frm.s6.value);
+    }
+    if(frm.s7.value > 0){
+    document.write("<p>",frm.q7.value," ",frm.d7.value," ",frm.s7.value);
+    }
+    if(frm.s8.value > 0){
+    document.write("<p>",frm.q8.value," ",frm.d8.value," ",frm.s8.value);
+    }
+    if(frm.s9.value > 0){
+    document.write("<p>",frm.q9.value," ",frm.d9.value," ",frm.s9.value);
+    }
+    if(frm.s10.value > 0){
+    document.write("<p>",frm.q10.value," ",frm.d10.value," ",frm.s10.value);
+    }
+    if(frm.s11.value > 0){
+    document.write("<p>",frm.q11.value," ",frm.d11.value," ",frm.s11.value);
+    }
+    if(frm.s12.value > 0){
+    document.write("<p>",frm.q12.value," ",frm.d12.value," ",frm.s12.value);
+    }
+    if(frm.s13.value > 0){
+    document.write("<p>",frm.q13.value," ",frm.d13.value," ",frm.s13.value);
+    }
+    if(frm.s14.value > 0){
+    document.write("<p>",frm.q14.value," ",frm.d14.value," ",frm.s14.value);
+    }
+    document.write("<p>Total :",frm.totalt.value,"</p>");
     print();
 }
 
@@ -105,6 +132,7 @@ function mcor(){
    srv = frm.servicos.value
       if (srv.includes('Pintura')) {
          cores.removeAttribute("hidden");
+         mcores();
       } else {
          cores.setAttribute("hidden", "true")
          slv.setAttribute("hidden", "true");
