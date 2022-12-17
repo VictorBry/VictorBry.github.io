@@ -9,6 +9,13 @@
  var cores = document.querySelector("#dcor");
  var outro = document.querySelector("#doutro")
  var srv = frm.servicos.value
+ var selcor = document.querySelector("#cor")
+ var sslv = document.querySelector("#stprata");
+ var sred = document.querySelector("#stred");
+ var scnz = document.querySelector("#stcinza");
+ var sprt = document.querySelector("#stpreto");
+ var sbrn = document.querySelector("#stbranco");
+ var ioutro = document.querySelector("#outro")
 
  function calc(){
     frm.s1.value = frm.q1.value * frm.v1.value
@@ -83,46 +90,46 @@
       }
     }
     if(frm.s1.value > 0){
-    document.write("<p>","Quantidade: ",frm.q1.value,"| Descrição: ",frm.d1.value,"| Total: R$",frm.s1.value);
+    document.write("<p>","Quantidade: ",frm.q1.value,"</p>","<p>","Descrição: ",frm.d1.value,"</p>","<p>","Total: R$",frm.s1.value),"</p>";
     }
     if(frm.s2.value > 0){
-    document.write("<p>","Quantidade: ",frm.q2.value,"| Descrição: ",frm.d2.value,"| Total: R$",frm.s2.value);
+    document.write("<p>","Quantidade: ",frm.q2.value,"</p>","<p>","Descrição: ",frm.d2.value,"</p>","<p>","Total: R$",frm.s2.value),"</p>";
     }
     if(frm.s3.value > 0){
-    document.write("<p>","Quantidade: ",frm.q3.value,"| Descrição: ",frm.d3.value,"| Total: R$",frm.s3.value);
+    document.write("<p>","Quantidade: ",frm.q3.value,"</p>","<p>","Descrição: ",frm.d3.value,"</p>","<p>","Total: R$",frm.s3.value),"</p>";
     }
     if(frm.s4.value > 0){
-    document.write("<p>","Quantidade: ",frm.q4.value,"| Descrição: ",frm.d4.value,"| Total: R$",frm.s4.value);
+    document.write("<p>","Quantidade: ",frm.q4.value,"</p>","<p>","Descrição: ",frm.d4.value,"</p>","<p>","Total: R$",frm.s4.value),"</p>";
     }
     if(frm.s5.value > 0){
-    document.write("<p>","Quantidade: ",frm.q5.value,"| Descrição: ",frm.d5.value,"| Total: R$",frm.s5.value);
+    document.write("<p>","Quantidade: ",frm.q5.value,"</p>","<p>","Descrição: ",frm.d5.value,"</p>","<p>","Total: R$",frm.s5.value),"</p>";
     }
     if(frm.s6.value > 0){
-    document.write("<p>","Quantidade: ",frm.q6.value,"| Descrição: ",frm.d6.value,"| Total: R$",frm.s6.value);
+    document.write("<p>","Quantidade: ",frm.q6.value,"</p>","<p>","Descrição: ",frm.d6.value,"</p>","<p>","Total: R$",frm.s6.value),"</p>";
     }
     if(frm.s7.value > 0){
-    document.write("<p>","Quantidade: ",frm.q7.value,"| Descrição: ",frm.d7.value,"| Total: R$",frm.s7.value);
+    document.write("<p>","Quantidade: ",frm.q7.value,"</p>","<p>","Descrição: ",frm.d7.value,"</p>","<p>","Total: R$",frm.s7.value),"</p>";
     }
     if(frm.s8.value > 0){
-    document.write("<p>","Quantidade: ",frm.q8.value,"| Descrição: ",frm.d8.value,"| Total: R$",frm.s8.value);
+    document.write("<p>","Quantidade: ",frm.q8.value,"</p>","<p>","Descrição: ",frm.d8.value,"</p>","<p>","Total: R$",frm.s8.value),"</p>";
     }
     if(frm.s9.value > 0){
-    document.write("<p>","Quantidade: ",frm.q9.value,"| Descrição: ",frm.d9.value,"| Total: R$",frm.s9.value);
+    document.write("<p>","Quantidade: ",frm.q9.value,"</p>","<p>","Descrição: ",frm.d9.value,"</p>","<p>","Total: R$",frm.s9.value),"</p>";
     }
     if(frm.s10.value > 0){
-    document.write("<p>","Quantidade: ",frm.q10.value,"| Descrição: ",frm.d10.value,"| Total: R$",frm.s10.value);
+    document.write("<p>","Quantidade: ",frm.q10.value,"</p>","<p>","Descrição: ",frm.d10.value,"</p>","<p>","Total: R$",frm.s10.value),"</p>";
     }
     if(frm.s11.value > 0){
-    document.write("<p>","Quantidade: ",frm.q11.value,"| Descrição: ",frm.d11.value,"| Total: R$",frm.s11.value);
+    document.write("<p>","Quantidade: ",frm.q11.value,"</p>","<p>","Descrição: ",frm.d11.value,"</p>","<p>","Total: R$",frm.s11.value),"</p>";
     }
     if(frm.s12.value > 0){
-    document.write("<p>","Quantidade: ",frm.q12.value,"| Descrição: ",frm.d12.value,"| Total: R$",frm.s12.value);
+    document.write("<p>","Quantidade: ",frm.q12.value,"</p>","<p>","Descrição: ",frm.d12.value,"</p>","<p>","Total: R$",frm.s12.value),"</p>";
     }
     if(frm.s13.value > 0){
-    document.write("<p>","Quantidade: ",frm.q13.value,"| Descrição: ",frm.d13.value,"| Total: R$",frm.s13.value);
+    document.write("<p>","Quantidade: ",frm.q13.value,"</p>","<p>","Descrição: ",frm.d13.value,"</p>","<p>","Total: R$",frm.s13.value),"</p>";
     }
     if(frm.s14.value > 0){
-    document.write("<p>","Quantidade: ",frm.q14.value,"| Descrição: ",frm.d14.value,"| Total: R$",frm.s14.value);
+    document.write("<p>","Quantidade: ",frm.q14.value,"</p>","<p>","Descrição: ",frm.d14.value,"</p>","<p>","Total: R$",frm.s14.value),"</p>";
     }
     document.write("<p>Valor Total: R$",frm.totalt.value,"</p>");
     print();
@@ -132,15 +139,12 @@ function mcor(){
    srv = frm.servicos.value
       if (srv.includes('Pintura')) {
          cores.removeAttribute("hidden");
+         selcor.setAttribute("required", "true")
          mcores();
       } else {
+         selcor.removeAttribute("required")
          cores.setAttribute("hidden", "true")
-         slv.setAttribute("hidden", "true");
-         red.setAttribute("hidden", "true")
-         cnz.setAttribute("hidden", "true")
-         prt.setAttribute("hidden", "true")
-         brn.setAttribute("hidden", "true")
-         outro.setAttribute("hidden", "true")
+         chidden()
       }
       
 }
@@ -151,6 +155,12 @@ function mcor(){
    prt.setAttribute("hidden", "true")
    brn.setAttribute("hidden", "true")
    outro.setAttribute("hidden", "true")
+   sslv.removeAttribute("required")
+   sred.removeAttribute("required")
+   scnz.removeAttribute("required")
+   sprt.removeAttribute("required")
+   sbrn.removeAttribute("required")
+   ioutro.removeAttribute("required")
  }
 
  function mcores(){
@@ -158,55 +168,71 @@ function mcor(){
       if(cvl == "Prata") {   
          chidden();
          slv.removeAttribute("hidden");
+         sslv.setAttribute("required","true");
       } else if(cvl == "Vermelho") {
          chidden();
          red.removeAttribute("hidden");
+         sred.setAttribute("required","true");
       } else if(cvl == "Cinza") {
          chidden();
          cnz.removeAttribute("hidden");
+         scnz.setAttribute("required","true");
       } else if(cvl == "Preto") {
          chidden();
          prt.removeAttribute("hidden");
+         sprt.setAttribute("required","true");
       } else if(cvl == "Branco") {
          chidden();
          brn.removeAttribute("hidden");
+         sbrn.setAttribute("required","true");
       } else if(cvl == "Outro") {
          chidden();
          outro.removeAttribute("hidden");
+         ioutro.setAttribute("required","true");
       }
  }
  function outracorpr(){
       if(frm.tprata.value == "Outro") {
          outro.removeAttribute("hidden");
+         ioutro.setAttribute("required","true");
       } else {
          outro.setAttribute("hidden", "true");
+         ioutro.removeAttribute("required");
       }
  }
  function outracorr(){
    if(frm.tred.value == "Outro") {
       outro.removeAttribute("hidden");
+      ioutro.setAttribute("required","true");
    } else {
       outro.setAttribute("hidden", "true");
+      ioutro.removeAttribute("required");
    }
 }
 function outracorc(){
    if(frm.tcinza.value == "Outro") {
       outro.removeAttribute("hidden");
+      ioutro.setAttribute("required","true");
    } else {
       outro.setAttribute("hidden", "true");
+      ioutro.removeAttribute("required");
    }
 }
 function outracorpt(){
    if(frm.tpreto.value == "Outro") {
       outro.removeAttribute("hidden");
+      ioutro.setAttribute("required","true");
    } else {
       outro.setAttribute("hidden", "true");
+      ioutro.removeAttribute("required");
    }
 }
 function outracorb(){
    if(frm.tbranco.value == "Outro") {
       outro.removeAttribute("hidden");
+      ioutro.setAttribute("required","true");
    } else {
       outro.setAttribute("hidden", "true");
+      ioutro.removeAttribute("required");
    }
 }
