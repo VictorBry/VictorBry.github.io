@@ -147,6 +147,7 @@ function mcor(){
          chidden()
       }
       
+      
 }
  function chidden(){
    slv.setAttribute("hidden", "true");
