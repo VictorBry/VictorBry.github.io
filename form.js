@@ -18,20 +18,20 @@
  var ioutro = document.querySelector("#outro")
 
  function calc(){
-    frm.s1.value = frm.q1.value * frm.v1.value
-    frm.s2.value = frm.q2.value * frm.v2.value
-    frm.s3.value = frm.q3.value * frm.v3.value
-    frm.s4.value = frm.q4.value * frm.v4.value
-    frm.s5.value = frm.q5.value * frm.v5.value
-    frm.s6.value = frm.q6.value * frm.v6.value
-    frm.s7.value = frm.q7.value * frm.v7.value
-    frm.s8.value = frm.q8.value * frm.v8.value
-    frm.s9.value = frm.q9.value * frm.v9.value
-    frm.s10.value = frm.q10.value * frm.v10.value
-    frm.s11.value = frm.q11.value * frm.v11.value
-    frm.s12.value = frm.q12.value * frm.v12.value
-    frm.s13.value = frm.q13.value * frm.v13.value
-    frm.s14.value = frm.q14.value * frm.v14.value
+    frm.s1.value = parseFloat(frm.q1.value.replace(",",".")) * parseFloat(frm.v1.value.replace(",","."))
+    frm.s2.value = parseFloat(frm.q2.value.replace(",",".")) * parseFloat(frm.v2.value.replace(",","."))
+    frm.s3.value = parseFloat(frm.q3.value.replace(",",".")) * parseFloat(frm.v3.value.replace(",","."))
+    frm.s4.value = parseFloat(frm.q4.value.replace(",",".")) * parseFloat(frm.v4.value.replace(",","."))
+    frm.s5.value = parseFloat(frm.q5.value.replace(",",".")) * parseFloat(frm.v5.value.replace(",","."))
+    frm.s6.value = parseFloat(frm.q6.value.replace(",",".")) * parseFloat(frm.v6.value.replace(",","."))
+    frm.s7.value = parseFloat(frm.q7.value.replace(",",".")) * parseFloat(frm.v7.value.replace(",","."))
+    frm.s8.value = parseFloat(frm.q8.value.replace(",",".")) * parseFloat(frm.v8.value.replace(",","."))
+    frm.s9.value = parseFloat(frm.q9.value.replace(",",".")) * parseFloat(frm.v9.value.replace(",","."))
+    frm.s10.value = parseFloat(frm.q10.value.replace(",",".")) * parseFloat(frm.v10.value.replace(",","."))
+    frm.s11.value = parseFloat(frm.q11.value.replace(",",".")) * parseFloat(frm.v11.value.replace(",","."))
+    frm.s12.value = parseFloat(frm.q12.value.replace(",",".")) * parseFloat(frm.v12.value.replace(",","."))
+    frm.s13.value = parseFloat(frm.q13.value.replace(",",".")) * parseFloat(frm.v13.value.replace(",","."))
+    frm.s14.value = parseFloat(frm.q14.value.replace(",",".")) * parseFloat(frm.v14.value.replace(",","."))
     frm.totalt.value = parseFloat(frm.s1.value)+parseFloat(frm.s2.value)+parseFloat(frm.s3.value)+parseFloat(frm.s4.value)+parseFloat(frm.s5.value)+parseFloat(frm.s6.value)+parseFloat(frm.s7.value)+parseFloat(frm.s8.value)+parseFloat(frm.s9.value)+parseFloat(frm.s10.value)+parseFloat(frm.s11.value)+parseFloat(frm.s12.value)+parseFloat(frm.s13.value)+parseFloat(frm.s14.value);
  }
 
@@ -147,7 +147,7 @@ function mcor(){
          chidden()
       }
       
-      
+
 }
  function chidden(){
    slv.setAttribute("hidden", "true");
