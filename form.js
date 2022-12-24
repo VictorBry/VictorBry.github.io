@@ -41,6 +41,7 @@
  
  function btnClick(){
    calc()
+   document.write("<p>Origginal Car</p>");
     document.write("<p>Tel:3423-3858 | Cel:9.8854-3656</p>");
     document.write("<p>Rua Pedro Flauzino Filho 280</p>");
     document.write("<p>Bairro Nossa Senhora Aparecida</p>");
